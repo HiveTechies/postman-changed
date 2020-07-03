@@ -8,10 +8,10 @@
 <h1>Messages</h1>
 <div class="m-3">
 {% postman_unread as unread_count %}
-<a class="btn btn-light shadow" href="{% url 'postman:inbox' %}"> <i class="fas fa-inbox"></i> Inbox</a>
-<a class="btn btn-light shadow" href="{% url 'postman:sent' %}"><i class="fas fa-paper-plane"></i> Sent </a>
-<a class="btn btn-light shadow" href="{% url 'postman:write' %}"><i class="fas fa-feather"></i> Write </a>
-<a class="btn btn-light shadow" href="{% url 'postman:archives' %}"><i class="fas fa-archive"></i> Archieve </a>
-<a class="btn btn-light shadow" href="{% url 'postman:trash' %}"><i class="fas fa-trash"></i> Trash </a>
+<a class="btn btn-light shadow border-success mr-4" href="{% url 'postman:inbox' %}"> <i class="fas fa-inbox"></i> Inbox</a>
+<a class="btn btn-light shadow border-success mr-4" href="{% url 'postman:sent' %}"><i class="fas fa-paper-plane"></i> Sent </a>
+<a class="btn btn-light shadow border-success mr-4" href="{% url 'postman:write' %}"><i class="fas fa-feather"></i> Write </a>
+<a class="btn btn-light shadow border-success mr-4" href="{% url 'postman:archives' %}"><i class="fas fa-archive"></i> Archieve </a>
+<a class="btn btn-danger shadow mr-4 border-danger" href="{% url 'postman:trash' %}"><i class="fas fa-trash"></i> Trash </a>
 </div>
 {% endblock %}
